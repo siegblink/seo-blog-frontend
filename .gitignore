@@ -78,6 +78,7 @@ web_modules/
 
 # Next.js build output
 .next
+next.config.js
 
 # Nuxt.js build / generate output
 .nuxt

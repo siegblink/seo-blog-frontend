@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Collapse, Navbar, NavbarToggler, NavbarBrand } from 'reactstrap'
 import { Nav, NavItem, NavLink } from 'reactstrap'
+import { APP_NAME } from '../config'
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -10,7 +11,7 @@ function Header() {
   return (
     <div>
       <Navbar color='light' light expand='md'>
-        <NavbarBrand href='/'>SeoBlog</NavbarBrand>
+        <NavbarBrand href='/'>{APP_NAME}</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className='ml-auto' navbar>
